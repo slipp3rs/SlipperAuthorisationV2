@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slipper Authorisation</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- *************** Start of Page Button section *************************-->
+    <div>
+      <nav>
+        <br />
+        <br />
+        <a href="./index.html"><button class="page">Slippers</button></a>
+        <a href="./Panties.html"><button class="page">Panties</button></a>
+        <a href="./SlidesInMouth.html"><button class="page">Slides</button></a>
+        <a href="./Instructions.html"
+          ><button class="page">Instructions</button></a
+        >
+      </nav>
+    </div>
+    <!-- *************** End of Page Button section *************************-->
+    <br />
+    <div class="headers">
+      <h1 class="h1style">GMK Instructions</h1>
+      <!--h2 class="h2style">Authorisation</h2 -->
+    </div>
+
+    <div class="container">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="70da5cd1-826f-4af8-8730-ed7e4f29e6c2"
+        />
+
+        <!-- *************** Start of GMK Instruction section *************************-->
+        <!-- Start of GMK Instructions panel -->
+        <!-- div class="headers">
+          <h1 class="h1style">GMK Instructions</h1>
+          <h2 class="h2style"></h2>
+        </div -->
+
+        <div class="form-group">
+          <label for="instructions"></label>
+          <textarea
+            class="textarea"
+            id="instructions"
+            name="Additional Instructions from your Goddess"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+        <!-- End of GMK Instructions panel -->
+        <!-- *************** End of GMK Instruction section *************************-->
+        <br />
+        <hr />
+        <br />
+        <br />
+        <div style="text-align: center" class="form">
+          <input class="emailbutton" type="submit" value="E-Mail slippers" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

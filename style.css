@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.headers {
+  margin-left: 4%;
+  margin-top: 4%;
+  margin-right: 4%;
+  border: solid;
+  background-color: rgb(251, 122, 239);
+  border-color: black;
+  border-radius: 8px;
+}
+
+.h1style {
+  margin-left: 2%;
+  text-align: center;
+}
+
+.h2style {
+  text-align: center;
+}
+
+.button {
+  width: 30%;
+  background-color: white;
+  border: 20px black;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+img {
+  width: 80%;
+}
+
+.slipper-gallery {
+  display: flex 1fr 1fr 1fr;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0px;
+  /* border: solid; */
+}
+
+.form-group {
+  margin: 4%;
+}
+
+label {
+  font-size: medium;
+  color: black;
+}
+
+.period {
+  font-size: medium;
+  background-color: antiquewhite;
+  border: solid black;
+  border-radius: 20px;
+}
+
+.textarea {
+  background-color: rgba(235, 232, 232, 0.972);
+  resize: none;
+  width: 98%;
+  height: auto;
+}
+
+.emailbutton {
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  padding: 11px;
+  font-size: 24px;
+  /* margin-right: 20%; */
+}
+
+.version {
+  color: rgb(120, 122, 122);
+  font-size: x-small;
+}
+
+.page {
+  width: 21%;
+  background-color: rgb(235, 189, 220);
+  border-radius: 8px;
+}

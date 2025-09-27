@@ -62,6 +62,7 @@ label {
   background-color: antiquewhite;
   border: solid black;
   border-radius: 20px;
+  text-align: center;
 }
 
 .textarea {

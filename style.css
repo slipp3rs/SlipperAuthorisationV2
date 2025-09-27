@@ -68,10 +68,11 @@ label {
 }
 
 .textarea {
-  background-color: rgba(235, 232, 232, 0.972);
+  background-color: rgb(251, 251, 252);
   resize: none;
   width: 98%;
   height: auto;
+  font-size: 18px;
 }
 
 .emailbutton {

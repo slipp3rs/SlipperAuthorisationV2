@@ -39,7 +39,7 @@
           <h2 class="h2style">Authorisation</h2>
         </div -->
 
-        <!-- start of panty Flex frame 1 for images -->
+        <!-- ************start of panty Flex frame 1 for images************ -->
         <div class="panty-gallery">
           <button type="button" class="button">
             <img src="images/VSP.png" alt="" />
@@ -53,7 +53,7 @@
             <img src="images/FutureUse1.png" alt="" />
           </button>
         </div>
-        <!-- End of panty Flex frame for 1 images -->
+        <!-- *************End of panty Flex frame for 1 images******************** -->
 
         <!-- start of panty Flex frame 1 for RadioButtons -->
         <div class="radiobutton">
@@ -62,7 +62,9 @@
               type="radio"
               name="Panty Message from your Goddess"
               id="rad10"
-              value="Victoria Secrets Panty Wear privileges have been granted by Goddess Miss Kelly."
+              value="Victoria Secrets Panty Wear privileges have been
+            granted by Goddess Miss Kelly"
+              onchange="document.getElementById('email').value = document.getElementById('rad10').value + ' ' + document.getElementById('period').value;"
             />
             <label for="rad10">Granted</label>
           </button>
@@ -73,6 +75,7 @@
               name="Panty Message from your Goddess"
               id="rad11"
               value="All panty wearing Privileges have been revoked by Goddess Miss Kelly"
+              onchange="document.getElementById('email').value = document.getElementById('rad11').value;"
             />
             <label for="rad11">Revoked</label>
           </button>
@@ -98,7 +101,13 @@
         <div class="form-group">
           <label for="Period">Panty Duration: </label>
 
-          <select class="period" name="For Panties" id="period" size="1">
+          <select
+            class="period"
+            name="For Panties"
+            id="period"
+            size="1"
+            onchange="document.getElementById('email').value = document.getElementById('rad10').value + ' ' + document.getElementById('period').value;"
+          >
             <option value="Until Further Notice">Until Further Notice</option>
             <option value="1 Hour">1 Hour</option>
             <option value="2 Hours">2 Hours</option>
@@ -127,6 +136,18 @@
             class="textarea"
             id="instructions"
             name="Additional Instructions from your Goddess"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="email">eMail preview</label>
+          <textarea
+            disabled
+            class="emailpreview"
+            id="email"
+            name="emailview"
             rows="4"
             cols="50"
           ></textarea>

@@ -24,9 +24,26 @@
       <h1 class="h1style">Slides Instructions</h1>
       <!--h2 class="h2style">Authorisation</h2 -->
     </div>
+    <br />
+    <!-- ********************Start of Mail Detail text box********************* -->
+    <div class="MailDetail">
+      <label for="MailPreview"></label>
+      <textarea
+        class="textarea"
+        id="instructions"
+        name="Additional Instructions from your Goddess"
+        rows="4"
+        cols="50"
+      ></textarea>
+    </div>
+    <!-- ********************End of Mail Detail text box********************* -->
 
     <div class="container">
-      <form action="https://api.web3forms.com/submit" method="POST">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        onformchange=""
+      >
         <input
           type="hidden"
           name="access_key"
@@ -153,11 +170,20 @@
             <option value="10 Minutes">10 Minutes</option>
             <option value="15 Minutes">15 Minutes</option>
             <option value="20 Minutes">20 Minutes</option>
+            <option value="25 Minutes">25 Minutes</option>
             <option value="30 Minutes">30 Minutes</option>
+            <option value="35 Minutes">35 Minutes</option>
             <option value="40 Minutes">40 Minutes</option>
+            <option value="45 Minutes">45 Minutes</option>
             <option value="50 Minutes">50 Minutes</option>
-            <option value="1 Hour">1 Hour</option>
-            <option value="2 Hours">2 Hours</option>
+            <option value="55 Minutes">55 Minutes</option>
+            <option value="1 Hour 00 Mins">1 Hour 00 Mins</option>
+            <option value="1 Hour 10 Mins">1 Hour 10 Mins</option>
+            <option value="1 Hour 20 Mins">1 Hour 20 Mins</option>
+            <option value="1 Hour 30 Mins">1 Hour 30 Mins</option>
+            <option value="1 Hour 40 Mins">1 Hour 40 Mins</option>
+            <option value="1 Hour 50 Mins">1 Hour 50 Mins</option>
+            <option value="2 Hour 00 Mins">2 Hour 00 Mins</option>
           </select>
         </div>
         <!-- End  of Slide duration control -->

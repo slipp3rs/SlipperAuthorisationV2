@@ -3,249 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slipper Authorisation</title>
-
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>GMK Slipper Authorisation</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- *************** Start of Page Button section *************************-->
-    <div>
-      <nav>
-        <br />
-        <br />
-        <a href="./index.html"><button class="page">Slippers</button></a>
-        <a href="./Panties.html"><button class="page">Panties</button></a>
-        <a href="./SlidesInMouth.html"><button class="page">Slides</button></a>
-      </nav>
-    </div>
-    <!-- *************** End of Page Button section *************************-->
-    <br />
-    <div class="headers">
-      <h1 class="h1style">Slipper Instructions</h1>
-      <!-- h2 class="h2style">Slipper Instructions</h2 -->
-    </div>
+    <h1></h1>
+    <main>
+      <section>
+        <div class="alldiv" id="div1">div1</div>
+        <div class="alldiv" id="div2">div2</div>
+        <div class="alldiv" id="div3">div3</div>
+      </section>
+    </main>
 
-    <div class="container">
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input
-          type="hidden"
-          name="access_key"
-          value="70da5cd1-826f-4af8-8730-ed7e4f29e6c2"
-        />
+    <form id="myForm">
+      <input
+        type="text"
+        id="inputText"
+        onchange="document.getElementById('outputText').value = this.value;"
+      />
+      <input type="text" id="outputText" />
+    </form>
 
-        <!-- *************** Start of slipper section *************************-->
-        <!-- start of slipper Flex frame 1 for images -->
-        <!--div class="headers">
-          <h1 class="h1style">Slipper Privileges</h1>
-        </div -->
-
-        <div class="slipper-gallery">
-          <button type="button" class="button">
-            <img src="images/BigPurpleSlippers.png" alt="" />
-          </button>
-
-          <button type="button" class="button">
-            <img src="images/NewPinkSlippers_.png" alt="" />
-          </button>
-
-          <button type="button" class="button">
-            <img src="images/UggSlippersCorrectSize.png" alt="" />
-          </button>
-        </div>
-        <!-- End of slipper Flex frame 1 for images -->
-
-        <!-- start of slipper Flex frame 1 for RadioButtons -->
-        <div class="radiobutton">
-          <button type="button" class="button">
-            <input
-              type="radio"
-              name="Slipper Message from your Goddess"
-              id="rad1"
-              value="Big Purple Slippers: Wear privileges have been granted by Goddess Miss Kelly."
-            />
-            <label for="rad1">Granted</label>
-          </button>
-
-          <button type="button" class="button">
-            <input
-              type="radio"
-              name="Slipper Message from your Goddess"
-              id="rad2"
-              value="Summer Pink Slippers: Wear privileges have been granted by Goddess Miss
-              Kelly."
-            />
-            <label for="rad2">Granted</label>
-          </button>
-
-          <button type="button" class="button">
-            <input
-              type="radio"
-              name="Slipper Message from your Goddess"
-              id="rad3"
-              value="Pink Uggs: Wear privileges have been granted by Goddess Miss
-              Kelly."
-            />
-            <label for="rad3">Granted</label>
-          </button>
-        </div>
-        <!-- End of slipper Flex frame 1 for RadioButtons -->
-        <br />
-
-        <!-- start of slipper Flex frame 2 for images 2 -->
-        <div class="slipper-gallery">
-          <button type="button" class="button">
-            <img src="images/ElfSlippers.png" alt="" />
-          </button>
-
-          <button type="button" class="button">
-            <img src="images/Revoked2.png" alt="" />
-          </button>
-
-          <button type="button" class="button">
-            <img src="images/PinkMules.png" alt="" />
-          </button>
-        </div>
-        <!-- End of slipper Flex frame 2 for images 2 -->
-
-        <!-- start of slipper Flex frame 2 for RadioButtons -->
-        <div class="radiobutton">
-          <button type="button" class="button">
-            <input
-              type="radio"
-              name="Slipper Message from your Goddess"
-              id="rad4"
-              value="Elf Slippers: Wear privileges have been granted by Goddess Miss Kelly."
-            />
-            <label for="rad4">Granted</label>
-          </button>
-
-          <button type="button" class="button">
-            <input
-              type="radio"
-              name="Slipper Message from your Goddess"
-              id="rad5"
-              value="All Slipper Privileges have been revoked by Goddess Miss Kelly."
-            />
-            <label for="rad5">Revoked</label>
-          </button>
-
-          <button type="button" class="button">
-            <input
-              type="radio"
-              name="Slipper Message from your Goddess"
-              id="rad6"
-              value="Summer Pink Slippers: Wear privileges have been granted by Goddess Miss
-              Kelly."
-            />
-            <label for="rad6">Granted</label>
-          </button>
-        </div>
-        <!-- End of slipper Flex frame 2 for RadioButtons -->
-        <br />
-
-        <!-- start of slipper Flex frame 3 for images -->
-        <div class="slipper-gallery">
-          <button type="button" class="button">
-            <img src="images/MonsterFeet.png" alt="" />
-          </button>
-
-          <button type="button" class="button">
-            <img src="images/GMK_Embroidered_Slippers.png" alt="" />
-          </button>
-
-          <button type="button" class="button">
-            <img src="images/CleaningSlippers3.png" alt="" />
-          </button>
-        </div>
-        <!-- End of slipper Flex frame for 3 images -->
-
-        <!-- start of slipper Flex frame 3 for RadioButtons -->
-        <div class="radiobutton">
-          <button type="button" class="button">
-            <input
-              type="radio"
-              name="Slipper Message from your Goddess"
-              id="rad7"
-              value="Big Toe Slippers: Wear privileges have been granted by Goddess Miss Kelly."
-            />
-            <label for="rad7">Granted</label>
-          </button>
-
-          <button type="button" class="button">
-            <input
-              type="radio"
-              name="Slipper Message from your Goddess"
-              id="rad8"
-              value="GMK Embroidered Slippers: Wear privileges have been granted by Goddess Miss Kelly."
-            />
-            <label for="rad8">Granted</label>
-          </button>
-
-          <button type="button" class="button">
-            <input
-              type="radio"
-              name="Slipper Message from your Goddess"
-              id="rad9"
-              value="Cleaning Slippers: Wear privileges have been granted by Goddess Miss
-                    Kelly."
-            />
-            <label for="rad9">Granted</label>
-          </button>
-        </div>
-        <!-- End of Flex slipper frame 3 for RadioButtons -->
-        <br />
-        <br />
-        <!-- start of slipper duration control -->
-        <div class="form-group">
-          <label for="Period">Slipper Duration: </label>
-
-          <select class="period" name="For Slippers" id="period" size="1">
-            <option value="Until Further Notice">Until Further Notice</option>
-            <option value="1 Day">1 Day</option>
-            <option value="2 Days">2 Days</option>
-            <option value="3 Days">3 Days</option>
-            <option value="4 Days">4 Days</option>
-            <option value="5 Days">5 Days</option>
-            <option value="6 Days">6 Days</option>
-            <option value="1 Week">1 Week</option>
-            <option value="2 Weeks">2 Weeks</option>
-          </select>
-        </div>
-        <!-- End  of slipper duration control -->
-
-        <!-- *************** End of Slipper section *************************-->
-
-        <br />
-        <hr />
-
-        <!-- *************** Start of GMK Instruction section *************************-->
-        <!-- div class="headers">
-          <h1 class="h1style">GMK Instructions</h1>
-          <h2 class="h2style"></h2>
-        </div -->
-        <br />
-
-        <div class="form-group">
-          <label for="instructions">Comments from your Goddess</label>
-          <textarea
-            class="textarea"
-            id="instructions"
-            name="Additional Instructions from your Goddess"
-            rows="4"
-            cols="50"
-          ></textarea>
-        </div>
-        <!-- *************** End of GMK Instruction section *************************-->
-        <br />
-
-        <div style="text-align: center" class="form">
-          <input class="emailbutton" type="submit" value="Send" />
-        </div>
-
-        <div>
-          <label class="version" for="Version">V2.21</label>
-        </div>
-      </form>
-    </div>
+    <footer></footer>
   </body>
 </html>

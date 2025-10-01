@@ -61,7 +61,8 @@
               type="radio"
               name="Slipper Message from your Goddess"
               id="rad1"
-              value="Big Purple Slippers: Wear privileges have been granted by Goddess Miss Kelly."
+              value="Big Purple Slippers: Wear privileges have been granted by Goddess Miss Kelly for the period selected below."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad1').value;"
             />
             <label for="rad1">Granted</label>
           </button>
@@ -71,8 +72,8 @@
               type="radio"
               name="Slipper Message from your Goddess"
               id="rad2"
-              value="Summer Pink Slippers: Wear privileges have been granted by Goddess Miss
-              Kelly."
+              value="Summer Pink Slippers: Wear privileges have been granted by Goddess Miss Kelly for the period selected below."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad2').value;"
             />
             <label for="rad2">Granted</label>
           </button>
@@ -82,8 +83,8 @@
               type="radio"
               name="Slipper Message from your Goddess"
               id="rad3"
-              value="Pink Uggs: Wear privileges have been granted by Goddess Miss
-              Kelly."
+              value="Pink Uggs: Wear privileges have been granted by Goddess Miss Kelly for the period selected below."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad3').value;"
             />
             <label for="rad3">Granted</label>
           </button>
@@ -114,7 +115,8 @@
               type="radio"
               name="Slipper Message from your Goddess"
               id="rad4"
-              value="Elf Slippers: Wear privileges have been granted by Goddess Miss Kelly."
+              value="Elf Slippers: Wear privileges have been granted by Goddess Miss Kelly for the period selected below."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad4').value;"
             />
             <label for="rad4">Granted</label>
           </button>
@@ -124,7 +126,8 @@
               type="radio"
               name="Slipper Message from your Goddess"
               id="rad5"
-              value="All Slipper Privileges have been revoked by Goddess Miss Kelly."
+              value="All Slipper Privileges have been revoked by Goddess Miss Kelly for the period selected below."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad5').value;"
             />
             <label for="rad5">Revoked</label>
           </button>
@@ -134,8 +137,8 @@
               type="radio"
               name="Slipper Message from your Goddess"
               id="rad6"
-              value="Summer Pink Slippers: Wear privileges have been granted by Goddess Miss
-              Kelly."
+              value="Summer Pink Slippers: Wear privileges have been granted by Goddess Miss Kelly for the period selected below."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad6').value;"
             />
             <label for="rad6">Granted</label>
           </button>
@@ -166,7 +169,8 @@
               type="radio"
               name="Slipper Message from your Goddess"
               id="rad7"
-              value="Big Toe Slippers: Wear privileges have been granted by Goddess Miss Kelly."
+              value="Big Toe Slippers: Wear privileges have been granted by Goddess Miss Kelly for the period selected below."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad7').value;"
             />
             <label for="rad7">Granted</label>
           </button>
@@ -176,7 +180,8 @@
               type="radio"
               name="Slipper Message from your Goddess"
               id="rad8"
-              value="GMK Embroidered Slippers: Wear privileges have been granted by Goddess Miss Kelly."
+              value="GMK Embroidered Slippers: Wear privileges have been granted by Goddess Miss Kelly for the period selected below."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad6').value;"
             />
             <label for="rad8">Granted</label>
           </button>
@@ -186,8 +191,8 @@
               type="radio"
               name="Slipper Message from your Goddess"
               id="rad9"
-              value="Cleaning Slippers: Wear privileges have been granted by Goddess Miss
-                    Kelly."
+              value="Cleaning Slippers: Wear privileges have been granted by Goddess Miss Kelly for the period selected below."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad9').value;"
             />
             <label for="rad9">Granted</label>
           </button>
@@ -199,7 +204,13 @@
         <div class="form-group">
           <label for="Period">Slipper Duration: </label>
 
-          <select class="period" name="For Slippers" id="period" size="1">
+          <select
+            class="period"
+            name="For Slippers"
+            id="period"
+            size="1"
+            onchange="document.getElementById('preview2').value = 'Period: ' + document.getElementById('period').value;"
+          >
             <option value="Until Further Notice">Until Further Notice</option>
             <option value="1 Day">1 Day</option>
             <option value="2 Days">2 Days</option>
@@ -234,6 +245,25 @@
             rows="4"
             cols="50"
           ></textarea>
+          <br />
+          <br />
+          <textarea
+            class="emaipreview"
+            id="preview1"
+            name=""
+            rows="3"
+            cols="50"
+          ></textarea>
+
+          <textarea
+            class="emaipreview"
+            id="preview2"
+            name=""
+            rows="1"
+            cols="50"
+          >
+Period: Until Further Notice</textarea
+          >
         </div>
         <!-- *************** End of GMK Instruction section *************************-->
         <br />
@@ -243,7 +273,7 @@
         </div>
 
         <div>
-          <label class="version" for="Version">V2.21</label>
+          <label class="version" for="Version">V2.22</label>
         </div>
       </form>
     </div>

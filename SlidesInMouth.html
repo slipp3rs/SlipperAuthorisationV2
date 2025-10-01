@@ -24,19 +24,6 @@
       <h1 class="h1style">Slides Instructions</h1>
       <!--h2 class="h2style">Authorisation</h2 -->
     </div>
-    <br />
-    <!-- ********************Start of Mail Detail text box********************* -->
-    <div class="MailDetail">
-      <label for="MailPreview"></label>
-      <textarea
-        class="textarea"
-        id="instructions"
-        name="Additional Instructions from your Goddess"
-        rows="4"
-        cols="50"
-      ></textarea>
-    </div>
-    <!-- ********************End of Mail Detail text box********************* -->
 
     <div class="container">
       <form
@@ -81,6 +68,7 @@
               name="Act of Worship Message from your Goddess"
               id="rad20"
               value="Goddess Miss Kelly requires an act of worship. The Lacoste slides should be placed in your mouth and held there for the period selected below."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad20').value;"
             />
             <label for="rad20">Required</label>
           </button>
@@ -91,6 +79,7 @@
               name="Act of Worship Message from your Goddess"
               id="rad21"
               value="Goddess Miss Kelly requires an act of worship. The White slides should be placed in your mouth and held there for the period selected below."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad21').value;"
             />
             <label for="rad21">Required</label>
           </button>
@@ -101,6 +90,7 @@
               name="Act of Worship Message from your Goddess"
               id="rad22"
               value="Goddess Miss Kelly requires an act of worship. The FlipFlops should be placed in your mouth and held there for the period selected below."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad22').value;"
             />
             <label for="rad22">Required</label>
           </button>
@@ -133,6 +123,7 @@
               name="Act of Worship Message from your Goddess"
               id="rad23"
               value="Goddess Miss Kelly requires an act of worship. The Silver slides should be placed in your mouth and held there for the period selected below."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad23').value;"
             />
             <label for="rad23">Required</label>
           </button>
@@ -143,6 +134,7 @@
               name="Act of Worship Message from your Goddess"
               id="rad24"
               value="All Acts of worship have been revoked by Goddess Miss Kelly"
+              onchange="document.getElementById('preview1').value = document.getElementById('rad24').value;"
             />
             <label for="rad24">Revoked</label>
           </button>
@@ -152,7 +144,8 @@
               type="radio"
               name="Act of Worship Message from your Goddess"
               id="rad25"
-              value="Goddess Miss Kelly requires an act of worship. The Gold slides should be placed in your mouth and held there for the period selected below."
+              value="Goddess Miss Kelly requires an act of worship. The Gold slides should be placed in your mouth and held for the period selected below."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad25').value;"
             />
             <label for="rad25">Required</label>
           </button>
@@ -164,7 +157,13 @@
         <div class="form-group">
           <label for="Period">Slides in Mouth: </label>
 
-          <select class="period" name="For Slides" id="period" size="1">
+          <select
+            class="period"
+            name="For Slides"
+            id="period"
+            size="1"
+            onchange="document.getElementById('preview2').value = 'Period: ' + document.getElementById('period').value;"
+          >
             <option value=" Until Further Notice">Until Further Notice</option>
             <option value="5 Minutes">5 Minutes</option>
             <option value="10 Minutes">10 Minutes</option>
@@ -195,7 +194,6 @@
           <h1 class="h1style">GMK Instructions</h1>
           <h2 class="h2style"></h2>
         </div -->
-        <br />
 
         <div class="form-group">
           <label for="instructions">Comments from your Goddess</label>
@@ -206,9 +204,28 @@
             rows="4"
             cols="50"
           ></textarea>
+          <br />
+          <br />
+          <textarea
+            class="emaipreview"
+            id="preview1"
+            name=""
+            rows="3"
+            cols="50"
+          ></textarea>
+
+          <textarea
+            class="emaipreview"
+            id="preview2"
+            name=""
+            rows="1"
+            cols="50"
+          >
+Period: Until Further Notice</textarea
+          >
         </div>
+
         <!-- *************** End of GMK Instruction section *************************-->
-        <br />
 
         <div style="text-align: center" class="form">
           <input class="emailbutton" type="submit" value="Send" />

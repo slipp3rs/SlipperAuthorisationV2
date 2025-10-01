@@ -75,6 +75,14 @@ label {
   font-size: 18px;
 }
 
+.emaipreview {
+  border-color: bisque;
+  resize: none;
+  width: 98%;
+  height: auto;
+  font-size: 11px;
+}
+
 .emailbutton {
   color: white;
   background-color: black;
@@ -82,14 +90,6 @@ label {
   padding: 11px;
   font-size: 24px;
   /* margin-right: 20%; */
-}
-
-.emailpreview {
-  background-color: bisque;
-  resize: none;
-  width: 98%;
-  height: auto;
-  font-size: 12px;
 }
 
 .version {
